@@ -1,0 +1,31 @@
+  ==  Escher/Droste effect software  ==
+
+Created by Bas Fagginger Auer, 2012.
+Directly inspired by http://blog.wolfram.com/2009/04/24/droste-effect-with-mathematica/.
+
+Released under the GNU General Public License version 3 as published by the Free Software Foundation (see COPYING).
+
+  ==  Installation  ==
+
+To build this software, it is necessary to have access to the following tools:
+
+ - A C++ compiler,
+ - CMake (http://www.cmake.org/),
+
+as well as the following development libraries:
+
+ - Simple Directmedia Layer (http://www.libsdl.org/).
+
+Compile instructions (from the current directory):
+
+ - mkdir build
+ - cd build
+ - cmake ..
+ - make
+
+If the compilation was successful, you should now have access to clustering executables in the directory build/src/.
+To use, issue
+  - build/src/escher foo.bmp
+and click anywhere in the source image to start the Escher effect for that particular colour (usually it is best to paint an area of the image with a specific colour).
+The output is saved as 'escher.bmp' in the current directory.
+
